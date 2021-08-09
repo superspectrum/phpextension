@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Portfolio</title>
   </head>
@@ -17,15 +17,16 @@
   
   <!--nav section-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow sticky-top">
-    <a href="../index.html" class="navbar-brand" style="color: #DA6419">My Site</a>
+    <a href="../index.php" class="navbar-brand" style="color: #DA6419">My Site</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navContent">
             <ul class="navbar-nav">
-                <li class="navbar-item active"><a href="../about.html" class="nav-link" style="color: #28A3B6">About</a></li>
-                <li class="navbar-item"><a href="../portfolio.html" class="nav-link" style="color: #28A3B6">Portfolio</a></li>
-                <li class="navbar-item"><a href="../contact.html" class="nav-link" style="color: #28A3B6">Contact</a></li>
+                <li class="navbar-item active"><a href="../about.php" class="nav-link" style="color: #28A3B6">About</a></li>
+                <li class="navbar-item"><a href="../portfolio.php" class="nav-link" style="color: #28A3B6">Portfolio</a></li>
+                <li class="navbar-item"><a href="../contact.php" class="nav-link" style="color: #28A3B6">Contact</a></li>
+                <li class="navbar-item"><a href="../weather.php" class="nav-link" style="color: #28A3B6">Weather</a></li>
             </ul>
         </div>
     </nav>
@@ -56,7 +57,7 @@
       <div class="col-lg-3 my-5">
         <h2>BioRosa</h2>
         <p>Design & Development</p>
-        <a class="btn btn-primary" href="https://biorosa.com/" role="button">View Site</a>
+        <a class="btn button-link" href="https://biorosa.com/" role="button">View Site</a>
       </div>
     </div>
   </div>
@@ -70,7 +71,7 @@
       <div class="col-lg-6 my-5">
         <h2>Chembio</h2>
         <p>Design & Content Loading</p>
-        <a class="btn btn-primary" href="https://chembio.com/" role="button">View Site</a>
+        <a class="btn button-link" href="https://chembio.com/" role="button">View Site</a>
       </div>
       <div class="col-lg-6">
         <a href="https://chembio.com/" target="_blank" alt="chembio">

@@ -6,27 +6,41 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/> 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>About</title>
   </head>
 
 <body>
+
+<!--PHP skills array and function-->
+<?php
+    $skills = array("HTML", "CSS", "JavaScript", "PHP/MySQL");
+    function newList($arr){
+      echo "<ul>";
+      foreach($arr as $value){
+        echo "<li>$value</li>";
+      }
+      echo "</ul>";
+    }
+?>
   
   <!--nav section-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow sticky-top">
-    <a href="../index.html" class="navbar-brand" style="color: #DA6419">My Site</a>
+    <a href="../index.php" class="navbar-brand" style="color: #DA6419">My Site</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navContent">
             <ul class="navbar-nav">
-                <li class="navbar-item active"><a href="../about.html" class="nav-link" style="color: #28A3B6">About</a></li>
-                <li class="navbar-item"><a href="../portfolio.html" class="nav-link" style="color: #28A3B6">Portfolio</a></li>
-                <li class="navbar-item"><a href="../contact.html" class="nav-link" style="color: #28A3B6">Contact</a></li>
+                <li class="navbar-item active"><a href="../about.php" class="nav-link" style="color: #28A3B6">About</a></li>
+                <li class="navbar-item"><a href="../portfolio.php" class="nav-link" style="color: #28A3B6">Portfolio</a></li>
+                <li class="navbar-item"><a href="../contact.php" class="nav-link" style="color: #28A3B6">Contact</a></li>
+                <li class="navbar-item"><a href="../first.php" class="nav-link" style="color: #28A3B6">PHP</a></li>
+                <li class="navbar-item"><a href="../weather.php" class="nav-link" style="color: #28A3B6">Weather</a></li>
             </ul>
         </div>
     </nav>
@@ -52,7 +66,7 @@
       </div>
       <div class="col-lg-8 my-5">
         <h2 class="font-weight-bold">About<span class="font-weight-light">Me</span></h2>
-              <hr class="my-5 border-dark">
+              <hr class="my-2 border-dark">
         <p>For fourteen years I worked and toured as a professional musician. Since leaving the
           music industry, I started working full time managing a local bar in downtown Salt Lake.
           When the pandemic hit the bar industry, I decided I wanted to make a change.
@@ -63,18 +77,21 @@
           Illustrator as well as Photoshop and continue to invest in my education. I have found an
           amazing mentor in a dear friend of mine who is a freelance full-stack developer, and
           have been working for him for the past six months. Along with his support and my
-          commitment to learning, I am ready to take the next steps to further my career.<br><br><a href="SLCC-Resume-Bio.pdf" download class="download">Download My Resume</a></p>
+          commitment to learning, I am ready to take the next steps to create a better future for my Family and I.</p>
+          <p class="font-weight-bold">My skills include:<?php newList($skills)?></p>
+          <a href="SLCC-Resume-Bio.pdf" download class="download">Download My Resume</a>
           <hr class="border-dark">
       </div>
     </div> 
   </div>
 
+
   <!--JavaScript References-->
 
   <div class="col-lg-8 text-center container mb-3">
     <h2 class="font-weight-bold p-3 mb-2 bg-transparent text-dark shadow-lg p-3 rounded">Take A Look At My References Here:</h2>
-    <button id="show" class="btn btn-outline-primary btn-lg">Let's see them!</button>
-    <button id="hide" class="btn btn-outline-primary btn-lg">I've seen enough.</button>
+    <button id="show" class="btn button-link btn-lg">Let's see them!</button>
+    <button id="hide" class="btn button-link btn-lg">I've seen enough.</button>
   </div>
   
   <div id="showhide">
@@ -149,7 +166,7 @@
           </tr>
           <tr></tr>
           <tr>
-            <td>Leadership & excellent commynication skills</td>
+            <td>Leadership & excellent communication skills</td>
           </tr>
           <tr>
             <td>Ability to work well alone & on a team</td>
@@ -203,9 +220,8 @@
     </body>
 
     <!--Scripts-->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="JS/JavaScript.js"></script>
-   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   <script src="JS/about.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </html>
